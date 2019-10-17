@@ -13,8 +13,6 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  * Add your docs here.
  */
 public class Drivetrain extends Subsystem {
-  
-  TalonSRX leftMaster = new TalonSRX(CircuitFreeway)
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
