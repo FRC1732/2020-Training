@@ -7,29 +7,17 @@
 
 package frc.robot.subsystems;
 
-<<<<<<< HEAD
-import edu.wpi.first.wpilibj.command.Subsystem;
-=======
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
 
->>>>>>> sstone_training
 
 /**
  * Add your docs here.
  */
 public class Drivetrain extends Subsystem {
-<<<<<<< HEAD
-  // Put methods for controlling this subsystem
-  // here. Call these from Commands.
-
-  @Override
-  public void initDefaultCommand() {
-    // Set the default command for a subsystem here.
-=======
 
   private TalonSRX LeftMaster = new TalonSRX(RobotMap.DRIVETRAIN_LEFTMASTER_ID);
   private TalonSRX RightMaster = new TalonSRX(RobotMap.DRIVETRAIN_RIGHTMASTER_ID);
@@ -71,7 +59,6 @@ public class Drivetrain extends Subsystem {
   public void initDefaultCommand() {
 
     // Set the default command for a subsystem here.`
->>>>>>> sstone_training
     // setDefaultCommand(new MySpecialCommand());
   }
 }

@@ -17,10 +17,7 @@ public class OI {
   //Variable Declarations
   private Joystick left = new Joystick(RobotMap.OI_LEFT_ID);
   private Joystick right = new Joystick(RobotMap.OI_RIGHT_ID);
-<<<<<<< HEAD
-=======
   
->>>>>>> sstone_training
   public Joystick operator1 = new Joystick(RobotMap.OI_OPERATOR_1_ID);
   public Joystick operator2 = new Joystick(RobotMap.OI_OPERATOR_2_ID);
 
