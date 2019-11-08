@@ -12,6 +12,7 @@ import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
+import frc.robot.commands.DriveWithJoysticks;
 
 /**
  * example comment =)
@@ -30,10 +31,7 @@ public class Drivetrain extends Subsystem {
   public Drivetrain(){
     LeftMaster.setInverted(true);
     RightMaster.setInverted(true);
-    Left1.setInverted(true);
-    Left2.setInverted(true);
-    Right1.setInverted(true);
-    Right2.setInverted(true);
+    
 
     
 
@@ -57,8 +55,9 @@ public class Drivetrain extends Subsystem {
 
   @Override
   public void initDefaultCommand() {
+    setDefaultCommand(new DriveWithJoysticks());
 
-    // Set the default command for a subsystem here.`
+    // Set the default command for a subsystem here.
     // setDefaultCommand(new MySpecialCommand());
   }
 }

@@ -27,7 +27,7 @@ public class OI {
    * @return the position, in the range of [-1, 1]
    */
   public double getLeftJoystick() {
-    return Math.pow(left.getY(),3);
+    return 1.75 * (Math.pow(left.getY(), 3)*-1);
   }
   
   /**
@@ -36,7 +36,7 @@ public class OI {
    * @return the position, in the range of [-1, 1]
    */
   public double getRightJoystick() {
-    return Math.pow(right.getY(),3);
+    return 1.75 * Math.pow(right.getY(), 3);
   }
   //// CREATING BUTTONS
   // One type of button is a joystick button which is any button on a
